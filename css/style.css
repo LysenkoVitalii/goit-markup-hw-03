@@ -170,7 +170,7 @@ p {
 
 .feature .container {
   justify-content: space-between;
-  padding: 94px 0;
+  padding: 94px 15px;
 }
 
 .visually-hidden {
@@ -221,9 +221,6 @@ p {
 }
 
 /* Примеры работ */
-.work .container {
-  padding: 0;
-}
 
 .work-title {
   font-size: 36px;
