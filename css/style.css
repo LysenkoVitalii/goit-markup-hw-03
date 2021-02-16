@@ -47,7 +47,7 @@ p {
 }
 
 .logo {
-  padding: 25px 93px 24px 15px;
+  /* padding: 25px 93px 24px 15px; */
 
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -62,8 +62,8 @@ p {
   color: var(--logo);
 }
 
-.header-list {
-  display: flex;
+.header-list .logo {
+  /* display: flex; */
   margin: 0;
 }
 
@@ -75,27 +75,23 @@ p {
   margin-left: 50px;
 }
 
-.site-nav,
-.item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
+.logo {
+  padding: 24px 93px 25px 0;
 }
 
-.header-list,
-.list-item {
+.logo,
+.link {
+  display: block;
+}
+
+.site-nav,
+.header-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .site-nav .link {
-  padding-top: 21px;
-  padding-bottom: 21px;
   align-items: flex-start;
   justify-content: space-between;
-  display: flex;
 
   font-weight: 500;
   font-size: 14px;
@@ -127,7 +123,14 @@ p {
 }
 
 /* Герой */
+/* .hero {
+  padding-top: 200px;
+} */
+
 .hero .container {
+  padding-top: 200px;
+  padding-bottom: 191px;
+
   background-color: var(--background);
   text-align: center;
   justify-content: center;
@@ -140,15 +143,14 @@ p {
   padding-right: 452px;
   padding-left: 452px;
   margin-bottom: 30px;
-  padding-top: 200px;
 
   color: var(--color-text);
   font-size: 44px;
   line-height: 1.36;
+  text-transform: uppercase;
 }
 
 .hero-button {
-  margin-bottom: 200px;
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
@@ -208,6 +210,7 @@ p {
 .featur-titile {
   margin-top: 0;
   margin-bottom: 13px;
+  text-transform: uppercase;
 }
 
 .featur-text {
@@ -221,6 +224,10 @@ p {
 }
 
 /* Примеры работ */
+
+.work {
+  padding-bottom: 108px;
+}
 
 .work-title {
   font-size: 36px;
@@ -242,7 +249,6 @@ p {
 .work-list li {
   margin-right: 30px;
   justify-content: center;
-  padding-bottom: 108px;
 }
 
 .work-list li:last-child {
@@ -293,7 +299,7 @@ p {
   color: var(--cord-color);
 }
 
-/* Футел */
+/* Футер */
 .footer .container {
   padding-top: 50px;
   padding-left: 215px;
@@ -340,7 +346,7 @@ p {
 }
 
 .footer-contact li:last-child {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 /* Проэкты портфолио */
@@ -384,8 +390,7 @@ p {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin-bottom: 34px;
+  padding: 0 0 34px 0;
 }
 
 .card {

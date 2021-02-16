@@ -7,6 +7,11 @@ ul {
   list-style: none;
 }
 
+* {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* обнуляем дефолтные подчеркивания у всех ссылок */
 a {
   text-decoration: none;
