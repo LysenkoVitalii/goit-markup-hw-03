@@ -46,9 +46,14 @@ p {
   justify-content: space-between;
 }
 
-.logo {
-  /* padding: 25px 93px 24px 15px; */
+.container.header .header-list {
+  padding-left: 0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
 
+.logo {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -56,15 +61,26 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-logo);
+  text-decoration: none;
+
+  margin-right: 93px;
 }
 
 .logo span {
   color: var(--logo);
 }
 
-.header-list .logo {
-  /* display: flex; */
+.site-nav .logo {
   margin: 0;
+  margin-right: 93px;
+}
+
+.site-nav ul {
+  padding: 0 0 0 0;
+}
+
+.header-list .list-item:first-child {
+  margin-left: auto;
 }
 
 .list-item:first-child {
@@ -76,12 +92,15 @@ p {
 }
 
 .logo {
-  padding: 24px 93px 25px 0;
+  align-items: center;
+  display: flex;
+  margin-right: 93px;
 }
 
-.logo,
 .link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav,
@@ -113,8 +132,14 @@ p {
   color: var(--logo);
 }
 
+.list-item .contact {
+  display: block;
+}
+
 .contact {
   color: var(--cord-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact:hover,
@@ -168,11 +193,11 @@ p {
 
 .feature {
   font-size: 14px;
+  padding: 94px 0;
 }
 
 .feature .container {
   justify-content: space-between;
-  padding: 94px 15px;
 }
 
 .visually-hidden {
@@ -195,7 +220,6 @@ p {
   width: 1170px;
   min-height: 101px;
   margin: 0;
-  padding: 0;
 }
 
 .list li {
@@ -205,6 +229,13 @@ p {
 
 .list li:last-child {
   margin-right: 0;
+}
+
+.team-card {
+  background-color: var(--color-text);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(118, 20, 20, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .featur-titile {
@@ -258,6 +289,7 @@ p {
 /* Команда */
 .team {
   background-color: var(--background-team);
+  padding: 94px 0 94px 0;
 }
 
 .team-title {
@@ -266,11 +298,6 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  padding-top: 94px;
-}
-
-.team-card {
-  padding-bottom: 94px;
 }
 
 .team-name {
@@ -285,8 +312,8 @@ p {
 }
 
 .team-name {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -300,10 +327,7 @@ p {
 }
 
 /* Футер */
-.footer .container {
-  padding-top: 50px;
-  padding-left: 215px;
-
+.footer {
   background-color: var(--background);
   width: 1600px;
   min-height: 252px;
@@ -314,6 +338,9 @@ p {
 }
 
 .footer-logo {
+  padding-top: 51px;
+  display: block;
+
   color: var(--color-text);
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -337,6 +364,10 @@ p {
 }
 
 .footer-contact {
+  display: block;
+}
+
+.footer-contact .contact {
   padding: 0;
   margin: 0;
 }
